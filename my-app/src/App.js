@@ -1,21 +1,13 @@
-import Login from "./login"
+import Card from "./components/card";
+import Button from "./components/button";
+
 function App () {
     return (
         <div> 
-            2
-            <Login 
-                title="Login Form" 
-                list={['free doamin']}
-            /> 
-            <hr/>
-            <Login 
-                title="Register Form"
-                list={[
-                    'free doamin',
-                    'free hosting',
-                    'SSL key',
-                ]}
-            /> 
+          <h2>App</h2>
+          <Card/>
+          <hr/>
+          <Button/>
         </div>
     )
 }
