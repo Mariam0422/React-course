@@ -1,15 +1,35 @@
-import React  from "react";
+import React from "react";
 
-class Card extends React.Component{
-//  constructor(){
-
-//  }
- render(){
-    return(
-        <div className="card_container">
-            <h2>Card</h2>
-        </div>
-    )
+class Card extends React.Component {
+ state = {
+    count: 0,
  }
+  increment = () => {
+    // this.count++;
+    // console.log(this.count);
+    this.setState({
+        count: this.state.count + 1
+    })
+ 
+  };
+  decrement = () => {
+    // this.count--;
+    // console.log(this.count)
+    this.setState({
+        count: this.state.count - 1
+    })
+  };
+
+
+  render() {
+    return (
+      <div className="card_container">
+        <h2>{this.props.title}</h2>
+        <button onClick={this.decrement} disabled={this.state.count === 0}>-</button>
+        <span>count = {this.state.count}</span>
+        <button onClick={this.increment} disabled={this.state.count === 5}>+</button>
+      </div>
+    );
+  }
 }
 export default Card;

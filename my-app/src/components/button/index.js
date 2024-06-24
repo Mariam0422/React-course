@@ -1,7 +1,8 @@
-const Button = () => {
+const Button = (props) => {
+    console.log(props)
     return (
         <div>
-            <h2>button</h2>
+            <button>{props.value}</button>
         </div>
     )
 }
