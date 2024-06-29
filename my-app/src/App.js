@@ -1,14 +1,10 @@
-import Card from "./components/card";
-import Button from "./components/button";
+import Auth from "./pages/Auth";
 
-function App () {
-    return (
-        <div> 
-          <h2>App</h2>
-          <Card/>
-          <hr/>
-          <Button/>
-        </div>
-    )
+function App() {
+  return (
+    <div>
+      <Auth/>
+    </div>
+  );
 }
 export default App;
