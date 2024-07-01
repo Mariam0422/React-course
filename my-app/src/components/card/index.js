@@ -1,6 +1,6 @@
 
-
-
+import React from "react";
+class Card extends React.Components{
   render() {
     return (
       <div className="card_container">
